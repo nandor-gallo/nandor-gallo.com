@@ -1,0 +1,41 @@
+.navbar{
+  background-color: rgba(255, 255, 255, 0.2);
+  border-bottom: 0.3rem solid white;
+}
+.box{
+  
+}
+
+.hero.is-info {
+  background-color: transparent;
+}
+.hero.is-info .title{
+  color: black;
+  text-align: center;
+}
+.hero.is-info .subtitle{
+  color:black
+}
+
+body {
+  background: linear-gradient(-45deg, #b99488, #5d7c75);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

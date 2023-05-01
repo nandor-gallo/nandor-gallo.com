@@ -6,60 +6,122 @@
     <head>
         <title>Nandor Gallo's Portfolio</title>
         <script src="https://kit.fontawesome.com/60b13ac983.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
         <link rel="stylesheet" , type="text/css" , href="styles/index.css" />
+        <link rel="stylesheet" href="styles/main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         
     </head>
-
+    <!-- Includes: Name, Header Links, and Social icons... -->
     <header>
-        <!-- Includes: Name, Header Links, and Social icons... -->
-        <nav class="navbar">
-            <div class="top">
-                <a>Nandor Gallo</a>
-                <a rel="noopener noreferrer" class="social-media-icon" href="https://www.linkedin.com/in/nandor-gallo-82a168145/"
-                    data-hint="LinkedIn" target="_blank" aria-label="Linkedin-Link">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a rel="noopener noreferrer" class="social-media-icon" href="https://github.com/nandor-gallo" data-hint="Github" target="_blank" aria-label="Github-Link">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a rel="noopener noreferrer" class="social-media-icon" href="mailto:nandorgallo@gmail.com" data-hint="Email"
-                    aria-label="Gmail-Link">
-                    <i class="fas fa-envelope"></i>
-                </a>
-
-                <a rel="noopener noreferrer" class="social-media-icon" href="https://ontariotechu.ca/programs/undergraduate/computers-and-technology/computer-science/index.php" data-hint="Ontario Tech Computer Science School Website" aria-label="University-Link">
-                    <i class="fas fa-user-graduate"></i>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#">
+                    <h1 class="name"> Nandor Gallo's Portfolio </h1>
                 </a>
             </div>
+            <div class="navbar-end">
+                <div class="navbar-brand">
+                    <a class="social-media-icon" href="https://www.linkedin.com/in/nandor-gallo-82a168145/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+                <div class="navbar-brand">
+                    <a class="social-media-icon" href="https://github.com/nandor-gallo">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <div class="navbar-brand">
+                    <a class="social-media-icon" href="mailto:nandorgallo@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <div class="navbar-brand">
+                    <a class="social-media-icon"
+                        href="https://ontariotechu.ca/programs/undergraduate/computers-and-technology/computer-science/index.php">
+                        <i class="fas fa-user-graduate"></i>
+                    </a>
+                </div>
+            </div>
         </nav>
-
+        
     </header>
+    
 
     <body class="mainBody">
         <!-- About Me Card -->
-        <div class="AboutBox">
-            <img class="profilePicture" src="resources/profilePicture.jpg" height="500px" width="400px">
-            <h2>About</h2>
-            <p> 
-                Data Analyst, AI engineering and Software Developer.
-                <br><br>
-                I obtained my bachelors at <a rel="noopener noreferrer" data-content="Ontario Tech University"
-                href="https://ontariotechu.ca/programs/undergraduate/computers-and-technology/computer-science/index.php" target="_blank">Ontario Tech University</a> with a degree in Computer Science January 2022. I also decided to
-                continue my education at 
-                <a rel="noopener noreferrer" data-content="Ontario Tech University"
-                    href="https://durhamcollege.ca/programs/artificial-intelligence-analysis-design-and-implementation-graduate-certificate"
-                    target="_blank">Durham College</a> in Artificial Intelligence Analysis, Design and Implementation obtaining a
-                graduate certificate April 2023. This is my portfolio site including some of my
-                latest projects. If you want to learn more about me feel free to contact me via email!
-            </p>
+        <section class="hero is-medium is-info">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="columns is-one-third">
+                        <div class="column">
+                            <div class="box">
+                                <img class="profilePicture" src="resources/profilePicture.jpg" height="500px" width="400px">
+                            </div>
+                            
+                        </div>
+                        <div class="column is-two-thirds">
+                            <div class="container">
+                                <div class="box">
+                                    <div class="content">
+                                        <p class="title">
+                                            About
+                                        </p>
+                                        <p class="subtitle">
+                                            Data Analyst, AI engineering and Software Developer. <br>
+                                            I obtained my bachelors at <a rel="noopener noreferrer" data-content="Ontario Tech University"
+                                                href="https://ontariotechu.ca/programs/undergraduate/computers-and-technology/computer-science/index.php"
+                                                target="_blank">Ontario Tech University</a> with a degree in Computer Science January 2022. I also decided to
+                                            continue my education at
+                                            <a rel="noopener noreferrer" data-content="Ontario Tech University"
+                                                href="https://durhamcollege.ca/programs/artificial-intelligence-analysis-design-and-implementation-graduate-certificate"
+                                                target="_blank">Durham College</a> in Artificial Intelligence Analysis, Design and Implementation obtaining a
+                                            graduate certificate April 2023. This is my portfolio site including some of my
+                                            latest projects. If you want to learn more about me feel free to contact me via email!
+                                        </p>
+                                        <div class="field is-grouped is-grouped-multiline">
+                                            <div class="control">
+                                                <div class="tags">
+                                                    <span class="tag is-danger">Cloud-Computing</span>
+                                                </div>
+                                            </div>
+                                        
+                                            <div class="control">
+                                                <div class="tags has-addons">
+                                                    <span class="tag is-dark">HTML</span>
+                                                    <span class="tag is-success">CSS</span>
+                                                </div>
+                                            </div>
+                                        
+                                            <div class="control">
+                                                <div class="tags has-addons">
+                                                    <span class="tag is-dark">chat</span>
+                                                    <span class="tag is-primary">on gitter</span>
+                                                </div>
+                                            </div>
+                                        </div>
 
-        </div>
+                                    </div>
+                                    
+
+                                </div>
+                                
+                            </div>
+                        </div>     
+                    </div> 
+                </div>
+            </div>
+        </section>
+        
+
         <!-- Put Projects in Cards -->
-        <div class="Projects">
+        <div class="Projects"> 
+            <h2>Projects</h2>
         
         </div>
         <!-- Contact Me Card -->
         <div class="Contact">
+            <h2>Contact Me</h2>
         
         </div>
     </body>
