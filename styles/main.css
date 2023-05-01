@@ -3,9 +3,13 @@
   border-bottom: 0.3rem solid white;
 }
 .box{
-  
+  text-align: center;
+  justify-content: center;
 }
-
+.field.is-grouped.is-grouped-multiline:last-child {
+  margin-bottom: -0.75rem;
+  justify-content: center;
+}
 .hero.is-info {
   background-color: transparent;
 }
@@ -15,6 +19,26 @@
 }
 .hero.is-info .subtitle{
   color:black
+}
+.social-media-icon>i {
+  font-size: 3.5rem;
+  transition: transform .1s ease;
+  color: black;
+  padding-right: 2rem;
+}
+
+.name {
+  font-size: 4rem;
+  font-weight: 400;
+  color: black;
+}
+
+
+.navbar-end {
+  justify-content: flex-end;
+  margin-left: auto;
+  place-items: flex-end;
+  padding-bottom: 1.5rem;
 }
 
 body {
