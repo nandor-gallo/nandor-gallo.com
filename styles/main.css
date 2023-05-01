@@ -1,5 +1,5 @@
 .navbar{
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.6);
   border-bottom: 0.3rem solid white;
 }
 .name {
@@ -46,6 +46,10 @@
   color:black
 }
 
+.hero-body {
+  border-bottom: 0.5rem solid white;
+  height: 90vh;
+}
 
 
 
@@ -62,7 +66,7 @@ body {
   background: linear-gradient(-45deg, #b99488, #5d7c75);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
-  height: 100vh;
+  height: 100%;
 }
 
 @keyframes gradient {
