@@ -1,15 +1,40 @@
 .navbar{
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.4);
   border-bottom: 0.3rem solid white;
 }
+.name {
+  font-size: 4rem;
+  font-weight: 400;
+  color: black;
+}
+.navbar-end {
+  justify-content: flex-end;
+  margin-left: auto;
+  place-items: flex-end;
+  padding-bottom: 1.5rem;
+}
+.social-media-icon>i {
+  font-size: 3.5rem;
+  transition: transform .1s ease;
+  color: black;
+  padding-right: 2rem;
+}
+.subtitle{
+  color: black;
+  font-size: 20px;
+}
+
 .box{
   text-align: center;
   justify-content: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 0.1rem solid black
 }
-.field.is-grouped.is-grouped-multiline:last-child {
-  margin-bottom: -0.75rem;
-  justify-content: center;
+.profilePicture{
+  border-radius: 40px;
+  border: 0.1rem solid black;
 }
+
 .hero.is-info {
   background-color: transparent;
 }
@@ -20,26 +45,18 @@
 .hero.is-info .subtitle{
   color:black
 }
-.social-media-icon>i {
-  font-size: 3.5rem;
-  transition: transform .1s ease;
-  color: black;
-  padding-right: 2rem;
-}
 
-.name {
-  font-size: 4rem;
-  font-weight: 400;
-  color: black;
+
+
+
+
+.field.is-grouped.is-grouped-multiline:last-child {
+  margin-bottom: -0.75rem;
+  justify-content: center;
 }
 
 
-.navbar-end {
-  justify-content: flex-end;
-  margin-left: auto;
-  place-items: flex-end;
-  padding-bottom: 1.5rem;
-}
+
 
 body {
   background: linear-gradient(-45deg, #b99488, #5d7c75);
