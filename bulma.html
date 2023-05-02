@@ -1,147 +1,89 @@
 <!DOCTYPE html>
 <html>
-<script src="https://kit.fontawesome.com/60b13ac983.js" crossorigin="anonymous"></script>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 
-    <title>Hovering Action Bar</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
-    
-        #action-bar {
-            position: fixed;
-            top: 50%;
-            left: 0;
-            transform: translateY(-50%);
-            background-color: #f2f2f2;
-            padding: 10px;
-            border-right: 1px solid #ccc;
-        }
-    
-        #action-bar a {
-            display: block;
-            margin-bottom: 10px;
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-            padding: 10px;
-            transition: all 0.3s ease-in-out;
-        }
-    
-        #action-bar a:hover {
-            background-color: #333;
-            color: #f2f2f2;
-        }
-    </style>
+<head>
+  <title>Smooth Scrolling Action Bar</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    #action-bar {
+      position: fixed;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 10px;
+      border-right: 1rem solid black;
+    }
+
+    #action-bar a {
+      display: block;
+      margin-bottom: 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      padding: 10px;
+    }
+
+    #action-bar a:hover {
+      background-color: #333;
+      color: #f2f2f2;
+    }
+
+    section {
+      height: 1000px;
+      position: relative;
+    }
+
+    #section1 {
+      background-color: #f2f2f2;
+    }
+
+    #section2 {
+      background-color: #ccc;
+    }
+
+    #section3 {
+      background-color: #f2f2f2;
+    }
+
+    #section4 {
+      background-color: #ccc;
+    }
+  </style>
 </head>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-        <a class="navbar-item" href="https://bulma.io">
-            <i class="fab fa-linkedin"></i>
-        </a>
-    </div>
-    <div class="navbar-brand">
-        <a class="navbar-item" href="https://bulma.io">
-            <i class="fab fa-linkedin"></i>
-        </a>
-    
-    </div>
-    <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-start">
-                <a rel="noopener noreferrer" class="social-media-icon" href="https://www.linkedin.com/in/nandor-gallo-82a168145/"><i class="fab fa-linkedin"></i></a>
-        </div>
-
-        <div class="navbar-end" id="end">
-            <div class="navbar-item">
-                <div class="buttons">
-                    <a class="button is-primary">
-                        <strong>Sign up</strong>
-                    </a>
-                    <a class="button is-light">
-                        Log in
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</nav>
-<section class="section">
-    <h1 class="title">Section</h1>
-    <h2 class="subtitle">
-        A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading.
-    </h2>
-</section>
 <body>
-    <div id="action-bar">
-        <a href="#section1">Section 1</a>
-        <a href="#section2">Section 2</a>
-        <a href="#section3">Section 3</a>
-        <a href="#section4">Section 4</a>
-    </div>
-    
-    <div id="section1" style="height: 1000px; background-color: #f2f2f2;">
-        <!-- content of section 1 -->
-    </div>
-    
-    <div id="section2" style="height: 1000px; background-color: #ccc;">
-        <!-- content of section 2 -->
-    </div>
-    
-    <div id="section3" style="height: 1000px; background-color: #f2f2f2;">
-        <!-- content of section 3 -->
-    </div>
-    
-    <div id="section4" style="height: 1000px; background-color: #ccc;">
-        <!-- content of section 4 -->
-    </div>
-    <section class="section">
-        <div class="container">
-            <h1 class="title">
-                Hello World
-            </h1>
-            <p class="subtitle">
-                My first website with <strong>Bulma</strong>!
-            </p>
-        </div>
-    </section>
-</body>
-<article class="message is-info">
-    <div class="message-body">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>Pellentesque risus mi</strong>, tempus quis
-        placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum
-        <a>felis venenatis</a> efficitur. Aenean ac <em>eleifend lacus</em>, in mollis lectus. Donec sodales, arcu et
-        sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et
-        sem eget, facilisis sodales sem.
-    </div>
-</article>
-<figure class="image is-128x128">
-    <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
-</figure>
-<section class="hero is-large is-info">
-    <div class="hero-body">
-        <p class="title">
-            Large hero
-        </p>
-        <p class="subtitle">
-            Large subtitle
-        </p>
-    </div>
-</section>
-<footer class="footer">
-    <div class="content has-text-centered">
-        <p>
-            <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-            is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-        </p>
-    </div>
-</footer>
+  <nav id="action-bar">
+    <a href="#section1">Section 1</a>
+    <a href="#section2">Section 2</a>
+    <a href="#section3">Section 3</a>
+    <a href="#section4">Section 4</a>
+  </nav>
 
+  <section id="section1">
+    <h1>Section 1</h1>
+    <p>Content for section 1</p>
+  </section>
+
+  <section id="section2">
+    <h1>Section 2</h1>
+    <p>Content for section 2</p>
+  </section>
+
+  <section id="section3">
+    <h1>Section 3</h1>
+    <p>Content for section 3</p>
+  </section>
+
+  <section id="section4">
+    <h1>Section 4</h1>
+    <p>Content for section 4</p>
+  </section>
+</body>
 
 </html>
