@@ -60,7 +60,6 @@ html {
 
 .box{
   justify-content: center;
-  border: 0.1rem solid black;
   border-radius: 20px;
   height: fit-content;
   width: 90%;
@@ -124,13 +123,13 @@ html {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255);
   padding: 10px;
-  border: 0.1rem solid black;
   border-radius: 5px;
   margin-left: 1rem;
   text-align: center;
   width: 8%;
+  z-index: 100;
 }
 
 
