@@ -124,12 +124,26 @@ html {
   transform: translateY(-50%);
   background-color: rgba(255, 255, 255, 0.5);
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 30px;
   margin-left: 1rem;
   text-align: center;
-  width: 8%;
+  width: 5vw;
   z-index: 100;
 }
+.sectionHeader{
+  text-align: center;
+  font-size: 2vh;
+
+}
+/* .sectionHeader:after {
+  justify-content: center;
+  text-align: center;
+  display: block;
+  background: black;
+  content: "";
+  height: 1rem;
+  width: 1px;
+} */
 
 
 #action-bar a {
