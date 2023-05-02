@@ -2,7 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 .navbar{
-  background-color: rgb(255, 251, 251,0.9);
+  background-color: rgba(185, 185, 185, 0.568);
+  background: linear-gradient(-45deg, rgb(255, 255, 255), rgba(88, 172, 120, 0.747),rgba(50, 148, 107, 0.575));
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
   border-bottom: 0.3rem solid white;
 }
 .name {
@@ -78,7 +81,6 @@ html {
 }
 .profilePicture{
   border-radius: 20px;
-  border: 0.1rem solid black;
   height: 100%;
 }
 .projectDates{
@@ -123,7 +125,7 @@ html {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  background-color: rgba(255, 255, 255);
+  background-color: rgba(180, 175, 175, 0.3);
   padding: 10px;
   border-radius: 5px;
   margin-left: 1rem;
@@ -153,7 +155,7 @@ html {
 
 
 body {
-  background: linear-gradient(-45deg, #84c5dfc2, #152c42);
+  background: white;
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   height: 100%;
