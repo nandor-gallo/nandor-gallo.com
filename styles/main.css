@@ -2,10 +2,8 @@ html {
   scroll-behavior: smooth;
 }
 .navbar{
-  background-color: rgba(185, 185, 185, 0.568);
-  background: linear-gradient(-45deg, rgb(255, 255, 255), rgba(88, 172, 120, 0.747),rgba(50, 148, 107, 0.575));
+  background: linear-gradient(-265deg, rgb(255, 255, 255),rgb(2, 2, 2));
   background-size: 400% 400%;
-  animation: gradient 10s ease infinite;
   border-bottom: 0.3rem solid white;
 }
 .name {
@@ -49,7 +47,7 @@ html {
 .card{
   padding: 0.5rem;
   margin: 4rem;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.3);
   height: 60vh;
   width: 20vw;
   
@@ -67,6 +65,7 @@ html {
   height: fit-content;
   width: 90%;
   margin-bottom: 5%;
+  background-color: rgba(255, 255, 255, 1);
 }
 
 #pictureColumn{
@@ -93,9 +92,7 @@ html {
   color: black;
   font-size: inherit;
 }
-.hero.is-info {
-  background-color: transparent;
-}
+
 
 
 #techStackSubTitle{
@@ -125,7 +122,7 @@ html {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  background-color: rgba(180, 175, 175, 0.3);
+  background-color: rgba(255, 255, 255, 0.5);
   padding: 10px;
   border-radius: 5px;
   margin-left: 1rem;
@@ -155,9 +152,8 @@ html {
 
 
 body {
-  background: white;
+  background: linear-gradient(-180deg, rgb(255, 255, 255), rgb(157, 177, 154));
   background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
   height: 100%;
   margin: 0;
   padding: 0;
