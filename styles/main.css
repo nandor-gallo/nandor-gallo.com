@@ -110,8 +110,8 @@ html {
 
 
 .hero-body {
-  border-bottom: 0.5rem solid white;
   height: fit-content;
+  margin-bottom: 3rem;
 }
 
 .field.is-grouped.is-grouped-multiline:last-child {
@@ -150,6 +150,13 @@ html {
   border-left: 0.1rem solid black;
 
 }
+
+.resumeBtnBox{
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
 /* .sectionHeader:after {
   justify-content: center;
   text-align: center;
