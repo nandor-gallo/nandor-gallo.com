@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <html>
     <head>
         <title>Nandor Gallo's Portfolio</title>
         <script src="https://kit.fontawesome.com/60b13ac983.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
         <link rel="stylesheet" href="styles/main.css">
-        <script src="scripts/index.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
     </head>
+    
+    
     <!-- Includes: Name, Header Links, and Social icons... -->
     <header>
         <nav id="section1" class="navbar" role="navigation" aria-label="main navigation">
@@ -49,6 +50,7 @@
     
 
     <body class="mainBody">
+    <script src="scripts/index.js"></script>
     <div id="action-bar">
         <a class="sectionHeader" href="#section1"><i class="fa-solid fa-user-large"></i></a>
         <a class="sectionHeader" href="#section2"><i class="fa-solid fa-briefcase"></i></a>
@@ -405,33 +407,36 @@
 
         <div class="hero-body is-large" id="contact">
             <div class="container">
-                <div class="field">
-                    <label class="label">Name</label>
-                    <div class="control">
-                        <input class="input" type="text" placeholder="e.g Alex Smith">
+                <form id='form'>
+
+                    <div class="field">
+                        <label class="label">Name</label>
+                        <div class="control">
+                            <input class="input" name='name' id="name" type="text" placeholder="e.g Alex Smith">
+                        </div>
                     </div>
-                </div>
-                
-                <div class="field">
-                    <label class="label">Email</label>
-                    <div class="control">
-                        <input class="input" type="email" placeholder="e.g. alexsmith@gmail.com">
+                    
+                    <div class="field">
+                        <label class="label">Email</label>
+                        <div class="control">
+                            <input class="input" name='email' id="email" type="email" placeholder="e.g. alexsmith@gmail.com">
+                        </div>
                     </div>
-                </div>
-                <div class="field">
-                    <label class="label">Message</label>
-                    <div class="control">
-                        <textarea class="textarea" placeholder="Message content..."></textarea>
+                    <div class="field">
+                        <label class="label">Message</label>
+                        <div class="control">
+                            <textarea id="message" name='message' class="textarea" placeholder="Message content..."></textarea>
+                        </div>
                     </div>
-                </div>
-                
-                
-                <div class="field is-grouped">
-                    <div class="control">
-                        <button class="button is-link">Send Message</button>
+                    
+                    
+                    <div class="field is-grouped">
+                        <div class="control">
+                            <button id="submitForm" type="submit" class="button is-link">Send Message</button>
+                        </div>
                     </div>
-                </div>
-        
+
+                </form>
             </div>
         </div>
 
