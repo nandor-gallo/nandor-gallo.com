@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Stylish Background with Scroll Animation</title>
+    <style>
+        body {
+            background: #222;
+            margin: 0;
+            padding: 0;
+            height: 1000vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .shape {
+            position: absolute;
+            top: 500px;
+            left: -50px;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background: #FF7F50;
+            transform: rotate(45deg);
+            z-index: -1;
+            opacity: 1;
+            transition: opacity 1s ease-out;
+        }
+
+        .shape2 {
+            position: absolute;
+            bottom: -50px;
+            right: -50px;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background: #ADD8E6;
+            transform: rotate(45deg);
+            z-index: -1;
+            opacity: 1;
+            transition: opacity 10s ease-out;
+        }
+
+        .shape.hidden {
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Stylish Background with Scroll Animation</h1>
+        <div class="shape"></div>
+        <div class="shape2"></div>
+    </div>
+    <script>
+        window.addEventListener('scroll', function () {
+            const shapes = document.querySelectorAll('.shape, .shape2');
+            shapes.forEach(shape => {
+                const shapePosition = shape.getBoundingClientRect().top
+                const screenPosition = window.innerHeight;
+                console.log(shapePosition);
+                if (shapePosition < screenPosition) {
+                    shape.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
