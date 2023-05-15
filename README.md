@@ -1,6 +1,11 @@
 # nandor-gallo.com
-### TODO
-- Link contact section to emailing service
-- Add work experience section
-- Clean up css and style boxes to work for mobile
-- Add web tracking for web visits analytics
+# My Personal Website
+
+Website includes:
+ - My Resume download link
+ - About Section
+ - Projects
+ - How to Contact Me
+
+
+Work in progress...
